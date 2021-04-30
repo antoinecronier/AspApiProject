@@ -11,6 +11,7 @@ namespace AspApiCommons.Entities
         private long id;
         public long Id { get => id; set => id = value; }
         public string Name { get; set; }
+        public virtual Company Company { get; set; }
         public decimal StandardBuyingPrice { 
             get 
             {
@@ -24,19 +25,7 @@ namespace AspApiCommons.Entities
                 return 0;
             }
         }
-        public List<Article> Selled
-        {
-            get
-            {
-                return null;
-            }
-        }
-        public List<Article> InStock
-        {
-            get
-            {
-                return null;
-            }
-        }
+        public virtual List<Article> Selled { get; set; } = new List<Article>();
+        public virtual List<Article> InStock { get; set; } = new List<Article>();
     }
 }

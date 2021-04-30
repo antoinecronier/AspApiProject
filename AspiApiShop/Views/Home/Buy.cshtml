@@ -1,0 +1,33 @@
+﻿@model AspiApiShop.Models.BuyViewModel
+
+@{
+    ViewBag.Title = "Buy";
+}
+
+<h2>Buy</h2>
+
+<div>
+    <h4>BuyViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveredOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveredOn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Return to articles", "Index")
+</p>

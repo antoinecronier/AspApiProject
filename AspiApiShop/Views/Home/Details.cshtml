@@ -1,0 +1,50 @@
+﻿@model AspiApiShop.Models.DetailsViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DetailsViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NbElem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NbElem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellingPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellingPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Buy", "Buy", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

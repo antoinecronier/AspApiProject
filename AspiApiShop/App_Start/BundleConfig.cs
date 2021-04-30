@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace AspApiShop
+namespace AspiApiShop
 {
     public class BundleConfig
     {
